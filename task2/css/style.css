@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f6f5f4;
+    font-family: Arial;
+}
+
+div {
+    width: 500px;
+    margin: 0 auto;
+    border-bottom: 1px solid #808080;
+}
+
+h1 {
+    font-size: 26px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.no-border {
+    border-bottom: 0;
+}
+
+div img {
+    display: block;
+    height: 198px;
+    margin: 0 auto;
+}
+
+li {
+    font-size: 10px;
+}
+
+.no-marker  li {
+    list-style-type: none;
+}
+
+.worker {
+    margin: 24px 0;
+    font-size: 12px;
+}
+
+.captions {
+    margin: 20px 0;
+    font-size: 14px;
+    font-weight: bolder;
+}
+
+a {
+    font-style: italic;
+}
+

@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Homework js</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="script/jquery-3.1.1.js"></script>
+	<script type="text/javascript" src="script/template.js"></script>
+
+</head>
+<body>
+	<script type="text/template" id="profile">
+		<% for( var i = 0; i < data.length; i++ ) { %>
+			<div class="main-info">
+				<h1><%= data[i].name%></h1>
+				<img src="<%= data[i].src%>">
+				<p class="worker"><%= data[i].worker%></p>
+			</div>
+			<div class="сauses">
+				<p class="captions">Хочу учить фронтенд, потому что:</p>
+				<ul>
+				    <% for( var j = 0; j < 3; j++ ) { %>
+						<li><%= data[i].cause[j] %></li>
+					<%}%>
+				</ul>
+			</div>
+
+			<div class="contacts">
+		    	<p class="captions">Мой контактный телефон:</p>
+				<ul class="no-marker">
+					<li><%= data[i].telephone%></li>
+				</ul>
+				<p class="captions">Мой профиль Вконтакте:</p>
+				<ul class="no-marker">
+					<li><a href="<%= data[i].linkVk%>" target="_blank"><%= data[i].linkVk%></a></li>
+				</ul>
+	    	</div>
+
+	    	<div class="no-border">
+	    		<p class="captions">Мой фидбек:</p>
+				<ul class="no-marker">
+			    	<li><%= data[i].feedback%></li>
+			    </ul>
+		 	</div>
+		<%} %>
+	</script>
+	<script type="text/javascript" src="script/task.js"></script>
+</body>
+</html>
